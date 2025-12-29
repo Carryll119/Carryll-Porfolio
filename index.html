@@ -38,44 +38,123 @@
   <!-- ***** Header ***** -->
 
   <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> -->
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+    <nav class="nav" role="navigation">
+      <ul class="nav__items">
+        <li class="nav__item"><a href="#tech-stack" class="nav__link">Tech Stack</a></li>
+        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <div class="header__name-badge">
+        <div class="header__name-text">
+          <svg class="header__wavy-line" viewBox="0 0 60 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0 10 Q 7.5 0, 15 10 T 30 10 T 45 10 T 60 10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h2>詹佳叡 Carryll Chan</h2>
+        </div>
+        <img src="./images/carryll.jpg" alt="Carryll Chan" class="header__photo header__photo--small">
+      </div>
+    </nav>
+
+    <div class="header__text-box">
+      <div class="header__text">
+        <p class="header__greeting">Hello! 👋</p>
+        <h1 class="heading-primary">
+          I'm Carryll Chan.<br>
+          A front-end developer.
+        </h1>
+        <p>
+          Front-end developer in Taiwan with a product mindset and a background in digital transformation.<br>
+          在台灣工作的前端工程師，擅長產品思維，過去有數位轉型與專案策略的實務經驗。
+        </p>
+
+        <!-- Social Links -->
+        <ul class="header__social-links">
+          <li>
+            <a href="https://github.com/Carryll119" title="GitHub" target="_blank">
+              <img src="./images/github.svg" alt="GitHub">
+            </a>
           </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+          <li>
+            <a href="https://www.linkedin.com/in/carryll-chan-b2135712b/" title="LinkedIn" target="_blank">
+              <img src="./images/linkedin.svg" alt="LinkedIn">
+            </a>
+          </li>
+          <li>
+            <a href="mailto:carryll119@gmail.com" title="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="36" height="36">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+              </svg>
+            </a>
           </li>
         </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>詹佳叡 Carryll Chan</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>
-        Front-end developer in Taiwan with a product mindset and a background in digital transformation.<br>
-        在台灣工作的前端工程師，擅長產品思維，過去有數位轉型與專案策略的實務經驗。
-        </p>
-        
-        <a href="mailto:carryll119@gmail.com" class="btn btn--pink">Get in touch</a>
+
+        <!-- CTA Buttons -->
+        <div class="header__cta-buttons">
+          <a href="mailto:carryll119@gmail.com" class="btn btn--outline">Email Me</a>
+          <a href="#contact" class="btn btn--pink">Get in touch</a>
+        </div>
       </div>
+    </div>
+
+    <div class="header__photo-section">
+      <div class="header__name-badge">
+        <svg class="header__wavy-line" viewBox="0 0 60 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 0 10 Q 7.5 0, 15 10 T 30 10 T 45 10 T 60 10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h2>詹佳叡 Carryll Chan</h2>
+      </div>
+      <img src="./images/carryll.jpg" alt="Carryll Chan" class="header__photo">
     </div>
   </header>
 
   <main role="main">
 
+    <!-- ***** Tech Stack ***** -->
+
+    <section class="tech-stack" id="tech-stack">
+      <div class="row">
+        <h2>Tech Stack</h2>
+        <div class="tech-categories">
+          <div class="tech-category" data-color="orange">
+            <h3>Frontend</h3>
+            <ul>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Tailwind CSS</li>
+              <li>JavaScript</li>
+              <li>Vite</li>
+              <li>HTML & CSS</li>
+            </ul>
+          </div>
+          <div class="tech-category" data-color="lime">
+            <h3>Backend & Tools</h3>
+            <ul>
+              <li>Node.js</li>
+              <li>Claude API</li>
+              <li>Git & GitHub</li>
+              <li>Netlify / Vercel</li>
+              <li>Render</li>
+            </ul>
+          </div>
+          <div class="tech-category" data-color="yellow">
+            <h3>Design & Others</h3>
+            <ul>
+              <li>Figma</li>
+              <li>Responsive Design</li>
+              <li>UI/UX Principles</li>
+              <li>Project Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ***** Work ***** -->
 
     <section class="work" id="work">
       <div class="row">
-        <h2>My Work</h2>
+        <h2>Projects</h2>
         <div class="work__boxes">
 
           <!-- Each div with the work__box class is a project. -->

@@ -136,6 +136,8 @@ h3 {
     letter-spacing: -0.02em;
     position: relative;
     z-index: 2;
+    max-width: none;
+    width: max-content;
 }
 
 h2 {
@@ -463,8 +465,16 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .header__text {
-    max-width: 850px;
+    max-width: none;
+    width: 100%;
     text-align: left;
+}
+
+.header__text > p,
+.header__text > .header__greeting,
+.header__text > .header__social-links,
+.header__text > .header__cta-buttons {
+    max-width: 850px;
 }
 
 .header__greeting {
@@ -876,7 +886,9 @@ body:not(.user-is-tabbing) a:focus {
 .about__photo-container {
     max-width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
 }
 
 .about__photo {
@@ -899,6 +911,8 @@ body:not(.user-is-tabbing) a:focus {
 
 .contact__info {
     max-width: var(--container-medium-width);
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* --------------------------------------- */
